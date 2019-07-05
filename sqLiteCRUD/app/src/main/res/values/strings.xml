@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">sqLiteCRUD</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="coding">Coding</string>
+    <string name="writing">Writing</string>
+    <string name="jogging">Jogging</string>
+    <string name="zodiac">Blood Group</string>
+    <string name="save">Save</string>
+    <string name="retrieve">Retrieve</string>
+    <string name="delete">Delete</string>
+
+    <string-array name="blood">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+</resources>

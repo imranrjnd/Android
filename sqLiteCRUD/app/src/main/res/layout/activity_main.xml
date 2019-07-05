@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="16dp"
+
+        android:paddingRight="16dp"
+
+        android:paddingTop="16dp"
+
+        android:paddingBottom="16dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:text=""
+
+            android:id="@+id/textView"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:inputType="textEmailAddress"
+
+            android:ems="10"
+
+            android:id="@+id/txtEmail"
+
+            android:layout_below="@+id/textView4"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:text="@string/email"
+
+            android:id="@+id/textView4"
+
+            android:layout_below="@+id/textView"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:text="@string/gender"
+
+            android:id="@+id/textView5"
+
+            android:layout_below="@+id/txtEmail"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textView5"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+
+            android:id="@+id/radioGroupGender">
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/male"
+
+                android:id="@+id/radMale"
+
+                android:checked="false" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/female"
+
+                android:id="@+id/radFemale"
+
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:text="@string/hobbies"
+
+            android:id="@+id/textView6"
+
+            android:layout_below="@+id/radioGroupGender"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/coding"
+
+            android:id="@+id/chkCoding"
+
+            android:onClick="onCheckboxClicked"
+
+            android:checked="false"
+
+            android:layout_below="@+id/textView6"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/writing"
+
+            android:id="@+id/chkWriting"
+
+            android:onClick="onCheckboxClicked"
+
+            android:layout_below="@+id/chkCoding"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+
+            android:checked="false" />
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/jogging"
+
+            android:id="@+id/chkJogging"
+
+            android:onClick="onCheckboxClicked"
+
+            android:layout_below="@+id/chkWriting"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+
+            android:checked="false" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:text="@string/zodiac"
+
+            android:id="@+id/textView7"
+
+            android:layout_below="@+id/chkJogging"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:id="@+id/spinnerZodiac"
+
+            android:layout_below="@+id/textView7"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/save"
+
+            android:id="@+id/btnSave"
+
+            android:onClick="save"
+
+            android:layout_below="@+id/spinnerZodiac"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/retrieve"
+
+            android:onClick="retrieve"
+
+            android:id="@+id/btnRetrieve"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_centerInParent="false"
+
+            android:layout_centerVertical="false" />
+
+        <Button
+
+            android:text="@string/delete"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/spinnerZodiac"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentEnd="true"
+
+            android:id="@+id/btnDelete" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
